@@ -10,7 +10,6 @@ const userStore = useUserStore()
 const userInfo = computed(() => userStore.userInfo)
 
 const description = 'Star on <a href="https://github.com/xiaomaohuifaguang/chatgpt-web" class="text-blue-500" target="_blank" >GitHub</a>'
-userInfo.name='小猫会发光'
 </script>
 
 <template>
