@@ -9,7 +9,6 @@ const userStore = useUserStore()
 
 const userInfo = computed(() => userStore.userInfo)
 
-const description = 'Star on <a href="https://github.com/xiaomaohuifaguang/chatgpt-web" class="text-blue-500" target="_blank" >GitHub</a>'
 </script>
 
 <template>
@@ -34,7 +33,7 @@ const description = 'Star on <a href="https://github.com/xiaomaohuifaguang/chatg
       <p class="overflow-hidden text-xs text-gray-500 text-ellipsis whitespace-nowrap">
         <span
           v-if="isString(userInfo.description) && userInfo.description !== ''"
-          v-html="description"
+          v-html="userInfo.description"
         />
       </p>
     </div>
