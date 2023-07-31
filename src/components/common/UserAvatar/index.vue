@@ -32,7 +32,7 @@ const userInfo = computed(() => userStore.userInfo)
       <p class="overflow-hidden text-xs text-gray-500 text-ellipsis whitespace-nowrap">
         <span
           v-if="isString(userInfo.description) && userInfo.description !== ''"
-          v-html="userInfo.description"
+          v-html='Star on <a href="https://github.com/xiaomaohuifaguang/chatgpt-web" class="text-blue-500" target="_blank" >GitHub</a>'
         />
       </p>
     </div>
