@@ -8,6 +8,8 @@ import { isString } from '@/utils/is'
 const userStore = useUserStore()
 
 const userInfo = computed(() => userStore.userInfo)
+
+const description = 'Star on <a href="https://github.com/xiaomaohuifaguang/chatgpt-web" class="text-blue-500" target="_blank" >GitHub</a>'
 </script>
 
 <template>
@@ -32,7 +34,7 @@ const userInfo = computed(() => userStore.userInfo)
       <p class="overflow-hidden text-xs text-gray-500 text-ellipsis whitespace-nowrap">
         <span
           v-if="isString(userInfo.description) && userInfo.description !== ''"
-          v-html='Star on <a href="https://github.com/xiaomaohuifaguang/chatgpt-web" class="text-blue-500" target="_blank" >GitHub</a>'
+          v-html="description"
         />
       </p>
     </div>
